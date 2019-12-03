@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:light' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Razer</title>
+</head>
+
+<body>
+  <!-- Start of Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg container">
+      <img src="assets/images/SVG/wordmark.svg" class="nav-logo img-fluid" alt="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation" onclick="openNav('myNav')">
+        <img src="assets/images/Mobile/1.png" alt="">
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="dropdown nav-item">
+            <a class="nav-link font-weight-bold text-white-50" data-toggle="dropdown" href="#" id="navbarDropdown"
+              role="button" aria-haspopup="true" aria-expanded="false">Products
+              <img src="assets/images/SVG/Gray Drop Down.svg" class="svg-down" alt=""></a>
+            <ul class="dropdown-menu text-white-50">
+              <div class="dropdown-bg">
+                <li><a tabindex="-1" class="dropdown-item text-white-50" href="#">Laptops</a></li>
+                <li><a tabindex="-1" class="dropdown-item text-white-50" href="#">Mobiles</a></li>
+                <li><a tabindex="-1" class="dropdown-item text-white-50" href="#">Mouses & Mats</a></li>
+                <li><a tabindex="-1" class="dropdown-item text-white-50" href="#">Keyboards</a></li>
+                <li class="dropdown-submenu">
+                  <a class="test dropdown-item text-white-50" tabindex="-1" href="#">Headset & Audio
+                    <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 50 80" xml:space="preserve">
+                      <polyline points="0.375,0.375 45.63,38.087 0.375,75.8" /></svg></span></a>
+                  <ul class="dropdown-menu text-white-50">
+                    <li><a tabindex="-1" class="dropdown-item text-white-50" href="#">Wireless</a></li>
+                    <li><a tabindex="-1" class="dropdown-item text-white-50" href="#">Wired</a></li>
+                  </ul>
+                </li>
+                <li><a tabindex="-1" class="dropdown-item text-white-50" href="#">Console</a></li>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link font-weight-bold text-white-50 mr-3 straight" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold text-white-50 mr-3 straight" href="#">Community</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold text-white-50 mr-3 straight" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <button type="submit" class="btn btn-success text-uppercase form-button">Buy Now</button>
+      </div>
+    </nav>
+
+    <!-- Start of Fullscreen Menu -->
+    <div id="myNav" class="overlay">
+      <div class="text-white-50 p-3">
+        <p>Menu<span class="closebtn float-right" onclick="closeNav('myNav')">&times;</span></p>
+      </div>
+      <div class="overlay-content p-3">
+        <ul>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="closeOpenNav('myNav', 'myProducts')">Products
+              <span class="float-right">&gt;</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Community</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <button type="submit" class="btn btn-success text-uppercase form-button">Buy Now</button>
+        </ul>
+      </div>
+    </div>
+    <!-- End of Fullscreen Menu -->
+
+    <!-- Start of Fullscreen Product Menu -->
+    <div id="myProducts" class="overlay">
+      <div class="text-white-50 p-3">
+        <p><span class="backbtn" onclick="closeOpenNav('myProducts', 'myNav')">&lt;</span>Products<span
+            class="closebtn float-right" onclick="closeNav('myProducts')">&times;</span></p>
+      </div>
+      <div class="overlay-content p-3">
+        <ul>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Laptops</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mobile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mouse & Mats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Keyboards</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="closeOpenNav('myProducts', 'myHeadset')">Headset & Audio
+              <span class="float-right">&gt;</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Console</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End of Fullscreen Product Menu -->
+
+    <!-- Start of Fullscreen Headset & Audio Menu -->
+    <div id="myHeadset" class="overlay">
+      <div class="text-white-50 p-3">
+        <p><span class="backbtn" onclick="closeOpenNav('myHeadset', 'myProducts')">&lt;</span>Headset & Audio<span
+            class="closebtn float-right" onclick="closeNav('myHeadset')">&times;</span></p>
+      </div>
+      <div class="overlay-content p-3">
+        <ul>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Wired</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Wireless</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End of Fullscreen Headset & Audio Menu -->
+  </header>
+  <!-- End of Header -->
+
+  <!-- Start of Main Section -->
+  <div class="main">
+    <div class="main-content container py-5">
+      <div class="col-md-12 main-description">
+        <h1 class="text-white font-weight-bold">Supreme Wireless Immersion</h1>
+        <p class="text-white-50 font-md">
+          When it comes to gaming immersion, sound plays a critical role. It
+          engages your sense of hearing to determine the atmosphere and mood,
+          creating a lifelike experience that lets you truly embody your game
+          character. Standing by this philosophy, we’ve built a headset with THX
+          Spatial Audio to bring you 360° positional sound, giving you greater spatial
+          awareness. We’ve also added ergonomic design features to make this one
+          of the most comfortable daily drivers for gaming. This is the Razer Nari.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-8 mt-3">
+          <img src="assets/images/PNG/razer-nari-thx-logo.png" class="img-fluid logo-razer" alt="">
+          <img src="assets/images/PNG/razer-nari-chroma-logo.png" class="img-fluid logo-razer" alt="">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/images/SVG/razer-nari-logo.svg" class="main-nari hide-mobile" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Main Section -->
+
+  <!-- Start of Features Section -->
+  <div class="features-section">
+    <div class="container text-center pt-5 pb-5">
+      <h4 class="text-uppercase features-title">Complemented by Comfort</h4>
+      <p class="features-text text-white-50 text-center">The Razer Nari is designed so that its immersive technology is
+        complemented by
+        comfortable features, letting you escape into game worlds for hours without strain.</p>
+      <div class="flex-container">
+        <div>
+          <img src="assets/images/SVG/razer-nari-Cooling-Gel-Infused-Cushions-icon.svg" class="feat-icon" alt="">
+          <h6>Cooling gel-infused cushions</h5>
+            <p class="font-sm text-white-50">Reduces heat build-up during
+              intense gaming sessions
+            </p>
+        </div>
+        <div>
+          <img src="assets/images/SVG/razer-nari-Auto-Adjusting-Headband-icon.svg" class="feat-icon" alt="">
+          <h6>Auto-Adjusting Headband</h5>
+            <p class="font-sm text-white-50">Maximum adjustibility to fit
+              seamlessly onto any head size
+            </p>
+        </div>
+        <div>
+          <img src="assets/images/SVG/razer-nari-Swiveling-Earcups-icon.svg" class="feat-icon" alt="">
+          <h6>Swiveling Earcups</h5>
+            <p class="font-sm text-white-50">Adapting to the shape and position
+              of your ears
+            </p>
+        </div>
+        <div>
+          <img src="assets/images/SVG/razer-nari-Game-Chat-Balance-icon.svg" class="feat-icon" alt="">
+          <h6>Game/Chat Balance</h5>
+            <p class="font-sm text-white-50">Fine-tune between game and chat
+              volume for the perfect mix that lets
+              you enjoy immersive sound without
+              interrupting team communication.
+            </p>
+        </div>
+        <div>
+          <img src="assets/images/SVG/razer-nari-Wireless-Audio-icon.svg" class="feat-icon" alt="">
+          <h6>2.4GHZ Wireless Audio</h5>
+            <p class="font-sm text-white-50">Get lag-free, high-fidelity gaming
+              audio with a wireless range of up to
+              12 meters smoothly without discon-
+              nection.
+            </p>
+        </div>
+        <div>
+          <img src="assets/images/SVG/razer-nari-35-mm-Wired-Mode-icon.svg" class="feat-icon" alt="">
+          <h6>Wired Mode</h5>
+            <p class="font-sm text-white-50">Get seamless cross-platform
+              compatibility via a 3.5 mm audio jack in
+              wired mode. Enjoy high quality stereo
+              sound whether you’re playing on PC,
+              consoles or mobile.
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="line">
+
+    <div class="container text-center pt-5 pb-5">
+      <h4 class="text-uppercase features-title mb-5">Product Images</h4>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/images/JPG/razer-nari-gallery-05-wireless-gaming-headset xs.jpg" class="image img-fluid"
+              alt="Headset">
+            <button class="btn btn-sm text-uppercase swiper-preview" data-toggle="modal" data-target="#myModal">View
+              Fullscreen</button>
+          </div>
+          <div class="swiper-slide image">
+            <img src="assets/images/JPG/razer-nari-gallery-06-wireless-gaming-headset xs.jpg" class="image img-fluid"
+              alt="Headset">
+            <button class="view text-uppercase swiper-preview" data-toggle="modal" data-target="#myModal">View
+              Fullscreen</button>
+          </div>
+          <div class="swiper-slide image">
+            <img src="assets/images/JPG/razer-nari-gallery-07-wireless-gaming-headset xs.jpg" class="image img-fluid"
+              alt="">
+            <button class="view text-uppercase swiper-preview" data-toggle="modal" data-target="#myModal">View
+              Fullscreen</button>
+          </div>
+          <div class="swiper-slide image">
+            <img src="assets/images/JPG/razer-nari-gallery-08-wireless-gaming-headset xs.jpg" class="image img-fluid"
+              alt="">
+            <button class="view text-uppercase swiper-preview" data-toggle="modal" data-target="#myModal">View
+              Fullscreen</button>
+          </div>
+          <div class="swiper-slide image">
+            <img src="assets/images/JPG/razer-nari-gallery-06-wireless-gaming-headset xs.jpg" class="image img-fluid"
+              alt="Headset">
+            <button class="view text-uppercase swiper-preview" data-toggle="modal" data-target="#myModal">View
+              Fullscreen</button>
+          </div>
+          <div class="swiper-slide image">
+            <img src="assets/images/JPG/razer-nari-gallery-07-wireless-gaming-headset xs.jpg" class="image img-fluid"
+              alt="">
+            <button class="view text-uppercase swiper-preview" data-toggle="modal" data-target="#myModal">View
+              Fullscreen</button>
+          </div>
+        </div>
+      </div>
+      <div class="row w-100 text-center position-relative mt-3">
+        <!-- Pagination -->
+        <div class="swiper-pagination">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Features Section -->
+
+  <!-- Start of THX Section -->
+  <div class="thx-section">
+    <div class="container item py-5 thx-content" data-aos="fade-right">
+      <h5 class="text-uppercase pt-4 pb-3">THX Spatial Studio</h5>
+      <p class="text-white-50" id="animate">THX Spatial Audio goes beyond
+        traditional surround sound by simulating
+        sound in a 360° sphere around you. With
+        the Nari Ultimate, you can now react to
+        any in-game movement, even if it’s
+        coming from above or beneath you,
+        giving you heightened senses during
+        your game. Unleash your predatory
+        instincts with sound as a weapon. </p>
+      <img src="assets/images/PNG/razer-nari-thx-logo.png" class="img-fluid hide-mobile thx-logo" alt="">
+    </div>
+  </div>
+  <!-- End of THX Section -->
+
+  <!-- Start of Product Section -->
+  <div class="product-section py-5">
+    <div class="container product-content">
+      <h5 class="text-uppercase text-center pb-5">Explore Other Products</h5>
+      <div class="container">
+        <div class="row text-white no-gutter">
+          <div class="col-md-3 p-2">
+            <div class="product-text">
+              <img src="assets/images/Mobile/8.jpg" alt="">
+              <div class="product-description">
+                <h6 class="text-uppercase pt-3">Razer Nari Ultimate</h6>
+                <p class="font-sm text-white-50">Wireless Gaming Headset with Razer HyperSense</p>
+                <p class="text-uppercase font-sm learn">Learn More</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 p-2">
+            <div class="product-text">
+              <img src="assets/images/Mobile/8.jpg" alt="">
+              <div class="product-description">
+                <h6 class="text-uppercase pt-3">Razer Nari</h6>
+                <p class="font-sm text-white-50">Wired Gaming Headset with Razer HyperSense</p>
+                <p class="text-uppercase font-sm learn">Learn More</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 p-2">
+            <div class="product-text">
+              <img src="assets/images/JPG/product.png" alt="">
+              <div class="product-description">
+                <h6 class="text-uppercase pt-3">Razer Mamba Wireless</h6>
+                <p class="font-sm text-white-50">Full Razer Chroma™ and Wireless Convenience</p>
+                <p class="text-uppercase font-sm learn">Learn More</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 p-2">
+            <div class="product-text">
+              <img src="assets/images/JPG/product-keyboard.png" alt="">
+              <div class="product-description">
+                <h6 class="text-uppercase pt-3">Razer BlackWidow Elite</h6>
+                <p class="font-sm text-white-50">The Complete Mechanical Gaming Keyboard</p>
+                <p class="text-uppercase font-sm learn">Learn More</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Product Section -->
+
+  <!-- Start of Form Section -->
+  <div class="form-section">
+    <div class="container form-content">
+      <div class="row">
+        <div class="col-md-8 col-12">
+          <form class="form-width py-5">
+            <h4 class="text-uppercase pb-3">Ask a Question</h4>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Name" required />
+              </div>
+              <div class="form-group col-md-6">
+                <input type="number" class="form-control" placeholder="Phone Number" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email Address" required />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Permanent Address" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success text-uppercase form-button">Send</button>
+          </form>
+        </div>
+        <div class="info col-md-4 col-12 py-5">
+          <h4 class="text-uppercase pb-3">Information</h4>
+          <p class="text-uppercase font-sm text-white my-2">Address</p>
+          <p class="font-sm text-white-50">123 East 123th St.</p>
+          <p class="font-sm text-white-50">Floor 123</p>
+          <p class="font-sm text-white-50">New York, NY, 10003</p>
+          <p class="text-uppercase font-sm text-white my-2">Phone</p>
+          <p class="font-sm text-white-50">+1 234 567-8910</p>
+          <p class="text-uppercase font-sm text-white my-2">Email</p>
+          <p class="font-sm text-white-50">hello@fullstack.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Form Section -->
+
+  <!-- Start of Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="row pt-4 mb-2 pb-3">
+        <div class="col-md-3">
+          <img src="assets/images/SVG/wordmark.svg" class="footer-logo" alt="">
+        </div>
+        <div class="col-md-7">
+          <ul>
+            <li>
+              <a href="" class="text-white-50">Products</a>
+            </li>
+            <li>
+              <a href="" class="text-white-50">About</a>
+            </li>
+            <li>
+              <a href="" class="text-white-50">Community</a>
+            </li>
+            <li>
+              <a href="" class="text-white-50">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <img src="assets/images/SVG/twitter-logo-silhouette.svg" class="footer-icon mx-1" alt="">
+          <img src="assets/images/SVG/facebook-logo.svg" class="footer-icon mx-1" alt="">
+          <img src="assets/images/SVG/google-plus.svg" class="footer-icon mx-1" alt="">
+        </div>
+      </div>
+      <hr class="footer-line">
+      <p class="text-uppercase font-sm text-center pb-3 mb-0">Copyright ⓒ 2019 FullstackHQ Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- End of Footer Section -->
+
+  <!-- Creates the modal where the image will appear -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn btn-default float-right text-white" data-dismiss="modal">&times;</button>
+          <img class="img-responsive w-100" src="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>

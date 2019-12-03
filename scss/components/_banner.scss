@@ -1,0 +1,36 @@
+.main {
+  background-image: url("../images/JPG/razer-nari-hero-desktop-wireless-gaming-headset\ CL.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .main-content {
+    .main-description {
+      width: 540px;
+    }
+
+    @media only screen and (max-width : 768px) {
+      .main-description {
+        width: 100%;
+      }
+    }
+
+    h1 {
+      text-transform: uppercase;
+    }
+
+    p {
+      text-align: left;
+    }
+
+    .logo-razer {
+      height: 80px;
+      width: 80px;
+    }
+
+    .main-nari {
+      height: 220px;
+      width: 220px;
+    }
+  }
+}

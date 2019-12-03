@@ -1,0 +1,59 @@
+.features-section {
+
+  .features-title {
+    color: $primary-color;
+  }
+
+  .features-text {
+    max-width: 700px;
+    line-height: 200%;
+    margin: 0 auto;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+
+    h6 {
+      text-transform: uppercase;
+      padding-top: 10px;
+    }
+
+    p {
+      max-width: 250px;
+      letter-spacing: 1px;
+    }
+
+    .feat-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .flex-container>div {
+    color: $white;
+    width: 325px;
+    margin: 20px;
+    text-align: left;
+  }
+
+  hr.line {
+    border-top: 1px solid gray;
+    width: 80%;
+  }
+}
+
+.modal-content,
+.modal-footer {
+  background-color: $dark-color;
+
+  .btn {
+    font-size: 50px;
+    position: absolute;
+    right: -25px;
+    top: -40px;
+  }
+}

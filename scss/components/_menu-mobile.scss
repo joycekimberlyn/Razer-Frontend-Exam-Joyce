@@ -1,0 +1,56 @@
+.overlay {
+  height: 100%;
+  width: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $secondary-color;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  .closebtn {
+    cursor: pointer;
+    line-height: 35px;
+    font-size: 40px;
+  }
+
+  .backbtn {
+    cursor: pointer;
+    line-height: 40px;
+    margin-right: 10px;
+  }
+
+  .overlay-content {
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        a {
+          text-decoration: none;
+          padding: 10px 0px;
+          text-decoration: none;
+          color: $gray;
+          display: block;
+          transition: 0.3s;
+
+          &:hover,
+          &:focus {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .form-button {
+      width: 100%;
+      padding: 15px 0;
+      border-radius: 32px;
+      font-size: 22px;
+      margin-top: 10%;
+    }
+  }
+}

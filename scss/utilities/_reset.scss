@@ -1,0 +1,21 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  background-color: $secondary-color;
+}
+
+.font {
+  &-sm {
+    font-size: 0.75em;
+  }
+
+  &-md {
+    font-size: 0.85em;
+  }
+
+  &-xl {
+    font-size: 1.25em;
+  }
+}

@@ -1,0 +1,78 @@
+.swiper-container {
+  width: 100%;
+
+  .swiper-slide {
+    width: 250px;
+    position: relative;
+
+    &:hover {
+      .swiper-preview {
+        visibility: visible;
+      }
+
+      .image {
+        opacity: 0.2;
+      }
+    }
+
+    .swiper-preview {
+      visibility: hidden;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+      background-color: $primary-color;
+      border-color: $primary-color;
+      border-radius: 18px;
+      padding: 0.5em 1em;
+      font-size: 10px;
+      font-weight: bold;
+
+
+
+      @media only screen and (max-width : 991px) {
+        font-size: 8px;
+        width: 75%;
+      }
+
+      @media only screen and (max-width : 768px) {
+        font-size: 10px;
+        width: 30%;
+      }
+
+      @media only screen and (max-width : 430px) {
+        font-size: 9px;
+        width: 30%;
+      }
+
+      @media only screen and (max-width : 391px) {
+        font-size: 8px;
+        width: 35%;
+      }
+    }
+  }
+}
+
+.swiper-pagination {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .swiper-pagination-bullet {
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    padding: 3px;
+    margin: 5px;
+  }
+
+  .inner-dot {
+    background-color: $primary-color;
+    height: 3px;
+    width: 3px;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

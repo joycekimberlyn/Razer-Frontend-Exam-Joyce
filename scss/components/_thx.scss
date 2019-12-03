@@ -1,0 +1,21 @@
+.thx-section {
+  background-image: url("../images/JPG/razer-nari-usp02-desktop-wireless-gaming-headset.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .thx-content {
+    h5 {
+      color: $primary-color;
+    }
+
+    p {
+      max-width: 330px;
+    }
+
+    .thx-logo {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}

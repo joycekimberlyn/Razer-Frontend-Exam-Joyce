@@ -1,0 +1,358 @@
+@media only screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none; } }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  background-color: #0f0f0f; }
+
+.font-sm {
+  font-size: 0.75em; }
+
+.font-md {
+  font-size: 0.85em; }
+
+.font-xl {
+  font-size: 1.25em; }
+
+.main {
+  background-image: url("../images/JPG/razer-nari-hero-desktop-wireless-gaming-headset CL.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .main .main-content .main-description {
+    width: 540px; }
+  @media only screen and (max-width: 768px) {
+    .main .main-content .main-description {
+      width: 100%; } }
+  .main .main-content h1 {
+    text-transform: uppercase; }
+  .main .main-content p {
+    text-align: left; }
+  .main .main-content .logo-razer {
+    height: 80px;
+    width: 80px; }
+  .main .main-content .main-nari {
+    height: 220px;
+    width: 220px; }
+
+.overlay {
+  height: 100%;
+  width: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0f0f0f;
+  overflow-x: hidden;
+  transition: 0.5s; }
+  .overlay .closebtn {
+    cursor: pointer;
+    line-height: 35px;
+    font-size: 40px; }
+  .overlay .backbtn {
+    cursor: pointer;
+    line-height: 40px;
+    margin-right: 10px; }
+  .overlay .overlay-content ul {
+    list-style: none;
+    padding-left: 0; }
+    .overlay .overlay-content ul li a {
+      text-decoration: none;
+      padding: 10px 0px;
+      text-decoration: none;
+      color: #818181;
+      display: block;
+      transition: 0.3s; }
+      .overlay .overlay-content ul li a:hover, .overlay .overlay-content ul li a:focus {
+        color: #00ff00; }
+  .overlay .overlay-content .form-button {
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 32px;
+    font-size: 22px;
+    margin-top: 10%; }
+
+.swiper-container {
+  width: 100%; }
+  .swiper-container .swiper-slide {
+    width: 250px;
+    position: relative; }
+    .swiper-container .swiper-slide:hover .swiper-preview {
+      visibility: visible; }
+    .swiper-container .swiper-slide:hover .image {
+      opacity: 0.2; }
+    .swiper-container .swiper-slide .swiper-preview {
+      visibility: hidden;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+      background-color: #00ff00;
+      border-color: #00ff00;
+      border-radius: 18px;
+      padding: 0.5em 1em;
+      font-size: 10px;
+      font-weight: bold; }
+      @media only screen and (max-width: 991px) {
+        .swiper-container .swiper-slide .swiper-preview {
+          font-size: 8px;
+          width: 75%; } }
+      @media only screen and (max-width: 768px) {
+        .swiper-container .swiper-slide .swiper-preview {
+          font-size: 10px;
+          width: 30%; } }
+      @media only screen and (max-width: 430px) {
+        .swiper-container .swiper-slide .swiper-preview {
+          font-size: 9px;
+          width: 30%; } }
+      @media only screen and (max-width: 391px) {
+        .swiper-container .swiper-slide .swiper-preview {
+          font-size: 8px;
+          width: 35%; } }
+
+.swiper-pagination {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  .swiper-pagination .swiper-pagination-bullet {
+    background-color: transparent;
+    border: 1px solid #00ff00;
+    padding: 3px;
+    margin: 5px; }
+  .swiper-pagination .inner-dot {
+    background-color: #00ff00;
+    height: 3px;
+    width: 3px;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+header {
+  padding: 10px; }
+  header .straight {
+    margin-top: 6px; }
+  header .navbar-toggler {
+    margin-right: -30px; }
+  header .navbar-nav li a {
+    text-decoration: none;
+    font-size: 11px;
+    text-transform: uppercase; }
+    header .navbar-nav li a .svg-down {
+      margin-left: -8px;
+      width: 30px; }
+  header .navbar-nav .dropdown-submenu {
+    position: relative; }
+  header .navbar-nav .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -10px; }
+  header .navbar-nav .dropdown-menu {
+    margin-top: 17px;
+    background-color: #080808; }
+    header .navbar-nav .dropdown-menu a {
+      font-size: 13px; }
+      header .navbar-nav .dropdown-menu a:hover, header .navbar-nav .dropdown-menu a:focus {
+        background-color: transparent;
+        color: #00ff00 !important; }
+  header .navbar-nav .dropdown-submenu svg {
+    margin-left: 10px;
+    width: 30px;
+    height: 10px; }
+    header .navbar-nav .dropdown-submenu svg:hover, header .navbar-nav .dropdown-submenu svg:focus {
+      filter: invert(54%) sepia(22%) saturate(6787%) hue-rotate(86deg) brightness(126%) contrast(120%); }
+  header .navbar-nav .dropdown-submenu polyline {
+    fill: none;
+    stroke: #818181;
+    stroke-width: 15;
+    stroke-linecap: round;
+    stroke-linejoin: round; }
+  header .nav-logo {
+    width: 200px; }
+  header .form-button {
+    background-color: #00ff00;
+    color: #000000;
+    font-size: 10px;
+    padding: 8px 38px;
+    border-radius: 16px;
+    font-weight: 900; }
+    header .form-button:hover, header .form-button:focus {
+      background-color: #00ff00;
+      border-color: #00ff00;
+      color: #000000; }
+
+.features-section .features-title {
+  color: #00ff00; }
+
+.features-section .features-text {
+  max-width: 700px;
+  line-height: 200%;
+  margin: 0 auto; }
+
+.features-section .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px; }
+  .features-section .flex-container h6 {
+    text-transform: uppercase;
+    padding-top: 10px; }
+  .features-section .flex-container p {
+    max-width: 250px;
+    letter-spacing: 1px; }
+  .features-section .flex-container .feat-icon {
+    width: 40px;
+    height: 40px; }
+
+.features-section .flex-container > div {
+  color: #ffffff;
+  width: 325px;
+  margin: 20px;
+  text-align: left; }
+
+.features-section hr.line {
+  border-top: 1px solid gray;
+  width: 80%; }
+
+.modal-content,
+.modal-footer {
+  background-color: #080808; }
+  .modal-content .btn,
+  .modal-footer .btn {
+    font-size: 50px;
+    position: absolute;
+    right: -25px;
+    top: -40px; }
+
+.product-section .product-content h5 {
+  color: #00ff00; }
+
+.product-section .product-content .product-text .product-description {
+  background-color: #161515;
+  padding: 10px;
+  padding-bottom: 0px;
+  border-bottom: 2px solid #00ff00;
+  min-height: 200px;
+  position: relative; }
+
+.product-section .product-content .product-text img {
+  width: 100%; }
+
+.product-section .product-content .product-text h6 {
+  font-weight: 900;
+  font-size: 0.85em;
+  line-height: 1.2; }
+
+.product-section .product-content .product-text p {
+  max-width: 210px; }
+
+.product-section .product-content .product-text .learn {
+  color: #00ff00;
+  position: absolute;
+  bottom: 0.75px; }
+
+.product-section .product-content .product-text hr.product-line {
+  border-top: 2px solid #00ff00;
+  width: 100%; }
+
+.product-section .no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
+
+.thx-section {
+  background-image: url("../images/JPG/razer-nari-usp02-desktop-wireless-gaming-headset.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .thx-section .thx-content h5 {
+    color: #00ff00; }
+  .thx-section .thx-content p {
+    max-width: 330px; }
+  .thx-section .thx-content .thx-logo {
+    height: 100px;
+    width: 100px; }
+
+.form-section {
+  background-color: #080808; }
+  @media only screen and (max-width: 768px) {
+    .form-section h4 {
+      text-align: center; } }
+  .form-section .form-content h4 {
+    color: #00ff00;
+    font-weight: 900; }
+  .form-section .form-content .form-control {
+    background-color: transparent; }
+  .form-section .form-content .form-width {
+    max-width: 500px; }
+  .form-section .form-content .form-button {
+    background-color: #00ff00;
+    color: #000000;
+    font-size: 10px;
+    padding: 8px 38px;
+    border-radius: 16px; }
+    .form-section .form-content .form-button:hover, .form-section .form-content .form-button:focus {
+      background-color: #00ff00;
+      border-color: #00ff00;
+      color: #000000; }
+    @media screen and (max-width: 767px) {
+      .form-section .form-content .form-button {
+        width: 100%; } }
+  .form-section .form-content .info p {
+    margin-bottom: 0; }
+
+footer .footer-icon {
+  width: 15px;
+  height: 20px; }
+
+footer hr.footer-line {
+  border-top: 1px solid #242526;
+  width: 100%; }
+
+footer p {
+  color: #242526;
+  font-weight: bold; }
+
+footer ul {
+  list-style-type: none;
+  padding: 0; }
+  @media only screen and (max-width: 768px) {
+    footer ul {
+      padding-left: 0; } }
+  footer ul li {
+    display: inline-block; }
+    @media (max-width: 768px) {
+      footer ul li {
+        display: inline-block;
+        margin-top: 7px; } }
+    @media (max-width: 767px) {
+      footer ul li {
+        display: block;
+        margin-top: 7px; } }
+    footer ul li a {
+      text-decoration: none;
+      font-size: 11px;
+      text-transform: uppercase;
+      margin: 0 30px; }
+      footer ul li a:hover {
+        text-decoration: none; }
+      @media only screen and (max-width: 992px) {
+        footer ul li a {
+          margin: 0 15px; } }
+      @media only screen and (max-width: 768px) {
+        footer ul li a {
+          margin-left: 0; } }
+
+footer .footer-logo {
+  width: 150px; }
+
